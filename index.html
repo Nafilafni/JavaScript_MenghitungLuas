@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 1 - JavaScript</title>
+</head>
+<body>
+  <h1>Menghitung Luas</h1>
+
+  <script>
+    // FUNGSI untuk menghitung luas persegi panjang
+    // Rumus: luas = panjang x lebar
+    function luasPersegiPanjang(panjang, lebar) {
+      let luas = panjang * lebar;
+      return luas;
+    }
+
+    // FUNGSI untuk menghitung luas bujur sangkar (persegi)
+    // Rumus: luas = sisi x sisi
+    function luasBujurSangkar(sisi) {
+      let luas = sisi * sisi;
+      return luas;
+    }
+
+    // FUNGSI untuk menghitung luas segitiga
+    // Rumus: luas = 1/2 x alas x tinggi
+    function luasSegitiga(alas, tinggi) {
+      let luas = (alas * tinggi) / 2;
+      return luas;
+    }
+
+    // Nilai variabel
+    let panjang = 26;  // panjang persegi panjang
+    let lebar = 6;     // lebar persegi panjang
+    let sisi = 15;      // sisi bujur 
+    let alas = 7;      // alas segitiga
+    let tinggi = 14;    // tinggi segitiga
+
+    // Memanggil fungsi dan menyimpan hasilnya ke variabel
+    let hasilPersegiPanjang = luasPersegiPanjang(panjang, lebar);
+    let hasilBujurSangkar = luasBujurSangkar(sisi);
+    let hasilSegitiga = luasSegitiga(alas, tinggi);
+
+    // Menampilkan hasil ke halaman web (<br> = pindah baris)
+    document.write("<h3>1. Persegi Panjang</h3>");
+    document.write("Panjang = " + panjang + " cm<br>");
+    document.write("Lebar = " + lebar + " cm<br>");
+    document.write("Luas = " + panjang + " x " + lebar + " = " + hasilPersegiPanjang + " cm²<br>");
+
+    document.write("<h3>2. Bujur Sangkar</h3>");
+    document.write("Sisi = " + sisi + " cm<br>");
+    document.write("Luas = " + sisi + " x " + sisi + " = " + hasilBujurSangkar + " cm²<br>");
+
+    document.write("<h3>3. Segitiga</h3>");
+    document.write("Alas = " + alas + " cm<br>");
+    document.write("Tinggi = " + tinggi + " cm<br>");
+    document.write("Luas = 1/2 x " + alas + " x " + tinggi + " = " + hasilSegitiga + " cm²<br>");
+    </script>
+    </body>
+    </html>
